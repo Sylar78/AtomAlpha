@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/background_light"
+    android:weightSum="100"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <TextView
+        android:text="Créer un compte"
+        android:layout_width="match_parent"
+        android:layout_weight="20"
+        android:layout_height="0dp"
+        android:textColor="#368EEE"
+        android:id="@+id/textCreateAccount"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:gravity="center" />
+    <Button
+        android:text="Se connecter"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:id="@+id/buttonSignIn"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/ButtonSignInStyle"
+        android:layout_marginRight="20dp"
+        android:textSize="15sp" />
+    <TextView
+        android:text="Ou"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:textColor="#000"
+        android:gravity="center"
+        android:id="@+id/textViewOu" />
+    <Button
+        android:text="Se connecter avec email"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:id="@+id/buttonSignUp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="15sp"
+        android:background="@drawable/buttonsignupstyle" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="35"
+        android:minHeight="25px"
+        android:minWidth="25px">
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBarAccount"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"
+            android:background="@drawable/progressbarstyle" />
+    </RelativeLayout>
+</LinearLayout>
